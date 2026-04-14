@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    top: 30%;
+}
+
+h1 {
+    font-size: 3rem;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #fff; }
+    to { text-shadow: 0 0 30px #ff0, 0 0 40px #f00; }
+}
+
+.message {
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: gold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: orange;
+}
+
+#wishBox {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #00ffcc;
+}
+
+.hidden {
+    display: none;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
